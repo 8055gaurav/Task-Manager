@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="icon.png" id="img" title="img"  height=70px  >
+
+        <button id="Urgent" class="tags">Urgent</button>
+        <button id="Work" class="tags">Work</button>
+        <button id="Shopping" class="tags">Shopping</button>
+        <button id="Personal" class="tags">Personal</button>
+        <button id="Gamming" class="tags">Gamming</button>
+
+    </div>
+
+    <div class="taskssec">
+        <div class="top">
+        <h2>Gaurav's Task Manager</h2>
+        </div>
+        <!-- style="color: black; padding-left: 2%; padding-top: 3%;" -->
+        <!-- <img src="icon.png" title="img"  height=60px > -->
+        <!-- <h1 style="color: black; padding-left: 35%; padding-top: 3%;">To Do List</h1> -->
+        <form action="">
+        <div class="inputfeild">
+            <input type="text" id="tasktitle" placeholder="enter your task here" required>
+            <!-- <input type="date" id="taskduedate" title="taskduedate" required> -->
+            <input type="date" id="taskdate" title="taskdate" required>
+
+            <select id="tasktype" title="task" required>
+                <option value="Urgent">Urgent</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Gamming">Gamming</option>
+            </select>
+            <button id="add" onclick="add2()" style="color: white; background-color: black; font-size: 20px ; border-radius: 30px;">Add task</button>
+        </div>
+    </form>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search tasks...">
+        <button id="searchButton" title="Search"><i class="fas fa-search"></i></button>
+    </div>
+    
+
+    <!-- <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search tasks...">
+        <button id="searchButton"><i class="fas fa-search"></i></button> -->
+
+        <!-- <button id="sortDate">Sort by Date</button> -->
+        <!-- <button id="sortCategory">Sort by Category</button> -->
+    <!-- </div> -->
+
+    <!-- <input type="text" id="searchInput" placeholder="Search task" oninput="searchTasks()"> -->
+
+
+    <!-- <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search task" oninput="searchTasks()">
+        <button id="searchButton" title="Search"><i class="fas fa-search"></i></button>
+    </div> -->
+    <!-- <input type="text" id="search" placeholder="Search">
+    <button id="searchButton"><i class="fas fa-search"></i></button> -->
+    <div class="navbarr">
+        <!-- ... Your existing code ... -->
+        <button id="sortDate">Sort by Date</button>
+        <button id="sortCategory">Sort by Category</button>
+    </div>
+    
+
+
+    
+        <div class="tasks" id="Alltasks">
+        </div>
+
+    </div>
+    <div id="Urgenttasks" class="hidden taskdiv">
+        <button class="min" onclick="remove(this)">X</button>
+    </div>
+    <div id="Worktasks" class="hidden taskdiv">
+        <button class="min" onclick="remove(this)">X</button>
+    </div>
+    <div id="Shoppingtasks" class="hidden taskdiv">
+        <button class="min" onclick="remove(this)">X</button>
+    </div>
+    <div id="Personaltasks" class="hidden taskdiv">
+        <button class="min" onclick="remove(this)">X</button>
+    </div>
+    <div id="Gammingtasks" class="hidden taskdiv">
+        <button class="min" onclick="remove(this)">X</button>
+    </div>
+    <script src="index.js"></script>
+
+  
+</body>
+
+</html>

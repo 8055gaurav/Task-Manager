@@ -1,0 +1,270 @@
+
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(247, 211, 144);
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    width: 15vw;
+    gap: 3vh;
+    align-items: center;
+    padding-top: 10%;
+    background-color: black; 
+    /* cursor: pointer; */
+  }
+  .navbar :hover {
+    color:red;
+    background-color: rgb(247, 211, 144);
+    cursor: pointer;
+  }
+  /* # id{
+    position: fixed;
+    padding-top: 0px;
+    margin-top: 1px;
+  }
+   */
+  .tags {
+    height: 5vh;
+    width: 90%;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+  }
+  
+  .tasksec {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputfeild {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 85vw;
+    height: 30vh;
+    gap: 2vw;
+  }
+  
+  .tasks {
+    gap: 2vh;
+    height: 85vh;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+  }
+  
+  .task {
+    border-radius: 30px;
+    height: 8vh;
+    background-color: white;
+    width: 90%;
+  }
+  
+  button {
+    border: none;
+    /* background-color: white;
+    border-radius: 30px; */
+  }
+  .button:hover {
+    color:blue;
+    background-color: rgb(247, 211, 144);
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        width: 100vw;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .tasks {
+        height: 40vh;
+        width: 100vw;
+    }
+    .tags {
+        width: fit-content;
+    }
+    .inputfeild {
+        height: auto;
+        flex-direction: column;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+  }
+  
+  #title {
+    width: 50vw;
+    height: 70%;
+  }
+  
+  #date {
+    width: 2vw;
+    text-decoration: none;
+    border: 0px;
+  }
+  
+  .task {
+    display: flex;
+    direction: row;
+    gap: 1vw;
+    font-size: smaller;
+    align-items: center;
+  }
+  
+  .ttitle {
+    margin-left: 2vw;
+    font-weight: bolder;
+    font-size: smaller;
+    width: 60%;
+  }
+  
+  .complete {
+    /* text-decoration-line: line-through; */
+    background-color: black;
+    color: white;
+  }
+  
+  .taskdiv {
+    height: 90%;
+    width: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 4vh;
+    background-color: white;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #tasktitle {
+    width: 45vw;
+    height: 7vh;
+    border-radius: 30px;
+    border: none;
+    padding-left: 10px;
+  }
+  
+  
+  #taskdate {
+    background-color: transparent;
+    border: none;
+    /* border: 2px;
+    border-radius: 30%; */
+
+
+  }
+  
+  #tasktype {
+    width: 6vw;
+    background-color: transparent;
+    border: none;
+  }
+
+  .top{
+    color: black; 
+    padding-left: 2%; 
+    padding-top: 3%;
+    
+  }
+  .top:hover{
+    color: white;
+  }
+
+
+
+
+
+
+  /* Add these rules to your existing CSS */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+    /* align-self: center; */
+    margin-left: 450px;
+  }
+  
+  #searchInput {
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    width: 200px;
+  }
+  
+  #searchButton {
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 8px 12px;
+    margin-left: 10px;
+    /* cursor: pointer; */
+  }
+  
+
+
+
+
+
+  .navbarr {
+    /* background-color: #333; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    padding: 10px 20px;
+
+    
+}
+/* ... Your existing CSS rules ... */
+
+/* Add styling for the sort buttons */
+#sortDate,
+#sortCategory {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#sortDate:hover,
+#sortCategory:hover {
+    background-color: #777;
+}
+
+/* ... Your existing CSS rules ... */
+
+
+
+
+  
